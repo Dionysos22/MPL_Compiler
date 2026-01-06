@@ -9,12 +9,12 @@ This project was developed as part of the **COM2043 - Programming Language Conce
 - **English-Like Syntax:** Uses keywords like `Start.`, `Finish.`, `plus`, `times`, and `equals`.
 - **Sentence Structure:** Every statement ends with a period (`.`) instead of a semicolon.
 - **Control Flow:** Supports `if-then-else` and `while-do` loops that read naturally.
-- [cite_start]**Ambiguity Resolution:** Handles the "Dangling Else" problem using precedence rules (`%nonassoc`) [cite: 71-72].
-- [cite_start]**Cross-Platform Logic:** Custom implementation of `yywrap()` to avoid dependency on external libraries[cite: 68].
+- **Ambiguity Resolution:** Handles the "Dangling Else" problem using precedence rules (`%nonassoc`).
+- **Cross-Platform Logic:** Custom implementation of `yywrap()` to avoid dependency on external libraries.
 
 ## 📄 Grammar & Syntax
 
-[cite_start]MPL replaces standard mathematical symbols with English words[cite: 20]:
+MPL replaces standard mathematical symbols with English words:
 
 | Operator | MPL Keyword    |
 | :------- | :------------- |
@@ -55,16 +55,18 @@ Finish.
 
 **Clone the repository:**
 
-````bash
+```bash
 git clone [https://github.com/Dionysos22/MPL_Compiler](https://github.com/Dionysos22/MPL_Compiler)
 cd MPL_Compiler
+```
 
 You need **Flex**, **Bison**, and **GCC** installed on your system.
-'''
+
 ### 1. Compile the Lexer
+
 ```bash
 flex mpl.l
-````
+```
 
 ### 2. Compile the Parser
 
@@ -99,11 +101,11 @@ Standard redirection works on UNIX-based systems:
 
 ## 📂 Project Structure
 
-- [cite_start]`mpl.l`: Lexical analyzer definitions (Tokenizes inputs like `Start`, `if`, `plus`)[cite: 65, 75].
-- [cite_start]`mpl.y`: Syntax analyzer and grammar rules (BNF notation)[cite: 69, 130].
-- [cite_start]`myprog.mpl`: Sample source code written in MPL[cite: 202].
+- `mpl.l`: Lexical analyzer definitions (Tokenizes inputs like `Start`, `if`, `plus`).
+- `mpl.y`: Syntax analyzer and grammar rules (BNF notation).
+- `myprog.mpl`: Sample source code written in MPL.
 
 ## 👤 Author
 
-[cite_start]**Sarp Mataş** [cite: 11]
-[cite_start]Computer Engineering Student @ Ankara University [cite: 5, 7]
+**Sarp Mataş**
+Computer Engineering Student @ Ankara University
